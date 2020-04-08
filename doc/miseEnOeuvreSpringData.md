@@ -2,8 +2,12 @@
 
 ## Diagramme de class UML
 
-![](images/miseEnOeuvreSpringData/diagrameClasse.jpg)
+![diagramme de classe](images/miseEnOeuvreSpringData/diagrameClasse.jpg)
 
+
+
+
+![diagrame de classe ](images/miseEnOeuvreSpringData/diagrameClasse1.jpg)
 
 
 ## Creation d'un projet Spring 
