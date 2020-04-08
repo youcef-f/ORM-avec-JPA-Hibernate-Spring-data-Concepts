@@ -6,7 +6,6 @@
 
 
 
-
 ![diagrame de classe ](images/miseEnOeuvreSpringData/diagrameClasse1.jpg)
 
 
