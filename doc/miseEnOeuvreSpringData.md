@@ -315,5 +315,24 @@ public class OrmAvecJpaHibernateSpringDataConceptsApplication {
 }
 
 ````
-![](images/miseEnOeuvreSpringData/xxxxxxxxxxxxxx)
 
+
+## Resultat
+
+````text
+Hibernate: select produit0_.id as id1_1_, produit0_.id_categorie as id_categ5_1_, produit0_.designation as designat2_1_, produit0_.prix as prix3_1_, produit0_.quantite as quantite4_1_ from produit produit0_
+Hibernate: select categorie0_.id as id1_0_0_, categorie0_.nom_categorie as nom_cate2_0_0_ from categorie categorie0_ where categorie0_.id=?
+Hibernate: select categorie0_.id as id1_0_0_, categorie0_.nom_categorie as nom_cate2_0_0_ from categorie categorie0_ where categorie0_.id=?
+Hibernate: select categorie0_.id as id1_0_0_, categorie0_.nom_categorie as nom_cate2_0_0_ from categorie categorie0_ where categorie0_.id=?
+Des:Ordinateur LX567 prix: 7000.0 quantité: 7 categorie: Ordinateur
+Des:Ordinateur HP pavillon 645 prix: 5000.0 quantité: 8 categorie: Ordinateur
+Des:Imprimante lastjet HP 785 prix: 2000.0 quantité: 6 categorie: imprimante
+Des:Imprimante lastjet HP 8794 prix: 2000.0 quantité: 6 categorie: imprimante
+Des:Scan canon DXdffd prix: 2000.0 quantité: 6 categorie: Scanner
+Hibernate: select produit0_.id as id1_1_, produit0_.id_categorie as id_categ5_1_, produit0_.designation as designat2_1_, produit0_.prix as prix3_1_, produit0_.quantite as quantite4_1_ from produit produit0_ where produit0_.designation like ?
+Hibernate: select categorie0_.id as id1_0_0_, categorie0_.nom_categorie as nom_cate2_0_0_ from categorie categorie0_ where categorie0_.id=?
+Hibernate: select categorie0_.id as id1_0_0_, categorie0_.nom_categorie as nom_cate2_0_0_ from categorie categorie0_ where categorie0_.id=?
+Des:Ordinateur HP pavillon 645 prix: 5000.0 quantité: 8 categorie: Ordinateur
+Des:Imprimante lastjet HP 785 prix: 2000.0 quantité: 6 categorie: imprimante
+Des:Imprimante lastjet HP 8794 prix: 2000.0 quantité: 6 categorie: imprimante
+````
