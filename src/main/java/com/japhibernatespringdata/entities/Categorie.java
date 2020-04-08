@@ -10,15 +10,17 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Categorie implements Serializable{
+public class Categorie implements Serializable {
 
-	@Id @GeneratedValue
+	@Id
+	@GeneratedValue
 	private Long id;
 	private String nomCategorie;
-	
+
 	// FetchType.LAZY ne remonte les informations que si c'est demandé
-	// categorie contient plusieurs produits. mappedBy fait reference à l'attribut categ dans la class Produit.
-	@OneToMany(mappedBy = "categ", fetch = FetchType.LAZY  )  
+	// categorie contient plusieurs produits. mappedBy fait reference à l'attribut
+	// categ dans la class Produit.
+	@OneToMany(mappedBy = "categ", fetch = FetchType.LAZY)
 	private Collection<Produit> produits;
 
 	public Long getId() {
@@ -54,8 +56,5 @@ public class Categorie implements Serializable{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
 
-	
-	
 }

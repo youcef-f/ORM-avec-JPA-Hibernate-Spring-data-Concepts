@@ -10,20 +10,22 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Produit implements Serializable{
+public class Produit implements Serializable {
 
-	// attention pour la clé primaire il faut que le type soit un Objet (Long) et non un type primitif (long)
-	@Id @GeneratedValue
+	// attention pour la clé primaire il faut que le type soit un Objet (Long) et
+	// non un type primitif (long)
+	@Id
+	@GeneratedValue
 	private Long id;
-	
-	@Column(length=70) // defaut varch=255
+
+	@Column(length = 70) // defaut varch=255
 	private String designation;
-	
+
 	private double prix;
-	private int  quantite ;
-	
-    @ManyToOne // un produit appartient à une categorie
-    @JoinColumn(name="foreign_key_id_categorie")  // foreign_key_id_categorie = creer une column clé étrangere
+	private int quantite;
+
+	@ManyToOne // un produit appartient à une categorie
+	@JoinColumn(name = "foreign_key_id_categorie") // foreign_key_id_categorie = creer une column clé étrangere
 	private Categorie categ;
 
 	public String getDesignation() {
@@ -71,8 +73,4 @@ public class Produit implements Serializable{
 		// TODO Auto-generated constructor stub
 	}
 
-	
-
-	
-	
 }
